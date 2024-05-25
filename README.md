@@ -10,7 +10,9 @@ Andrej Aleksovski 213100
   Бројот на условни изрази = 9
   Цикломатската комплексност = 9 + 1 = 10
 
-4![Screenshot 2024-05-24 210946](https://github.com/Alekso93/SI_2024_lab2_213100/assets/107583467/1ec4e1c4-520d-48e2-bb02-2384873527e8)
+4.
+
+![Screenshot 2024-05-24 210946](https://github.com/Alekso93/SI_2024_lab2_213100/assets/107583467/1ec4e1c4-520d-48e2-bb02-2384873527e8)
 
 
 .Тестови според Every Branch критериумот
@@ -44,4 +46,16 @@ Item item3 = new Item("testname3", "17542", 40, 30);
 Тест 6:
 
 Влезни податоци: List<Item> list = {new Item("item", "!1234", 400, -10)}, payment = 5000
-Овој тест е за исклучокот кога имаме недозволен карактер во баркодот.
+
+
+5.
+
+![Screenshot 2024-05-24 150113](https://github.com/Alekso93/SI_2024_lab2_213100/assets/107583467/0b39a1a6-4720-416e-bf19-044ef979187d)
+
+
+Условот има три подуслови:
+A: item.getPrice() > 300
+B: item.getDiscount() > 0
+C: item.getBarcode().charAt(0) == '0'
+За Multiple Condition тестирање, треба да се тестираат сите комбинации на вистинити и лажни вредности на подусловите (2^3 = 8 комбинации):
+Табела на тест случаи:
